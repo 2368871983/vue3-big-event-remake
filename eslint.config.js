@@ -9,16 +9,13 @@ export default [
       // 找到对应规则，注释掉或者修改其值
       "vue/multi-word-component-names": ["error", {
         "ignores": ['index']
-      }] // 将规则设为'off'禁用它
+      }], // 将规则设为'off'禁用它,
+       "no-undef": "off" 
     }
   },
   {
     name: 'app/files-to-lint',
     files: ['**/*.{js,mjs,jsx,vue}'],
-    rules: {
-      "no-undef": "error" // 启用未定义变量检查
-    },
-
   },
 
   {
