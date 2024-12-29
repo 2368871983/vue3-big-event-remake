@@ -4,13 +4,12 @@ import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 
 export default [
   {
-    // 全局配置部分
+    
     rules: {
-      // 找到对应规则，注释掉或者修改其值
+      "no-undef": "off" ,
       "vue/multi-word-component-names": ["error", {
         "ignores": ['index']
-      }], // 将规则设为'off'禁用它,
-       "no-undef": "off" 
+      }]
     }
   },
   {
